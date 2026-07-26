@@ -1,0 +1,26 @@
+EV_Battery_Health_Prediction
+│
+├── app.py
+│
+├── models
+│   ├── soh_model.pkl
+│   └── rul_model.pkl
+│
+├── notebooks
+│   └── EV_Battery_Analysis.ipynb
+│
+├── data
+│   └── battery_data.csv
+│
+├── requirements.txt
+│
+└── README.md
+
+pandas
+numpy
+scikit-learn
+xgboost
+streamlit
+matplotlib
+seaborn
+jupyter
