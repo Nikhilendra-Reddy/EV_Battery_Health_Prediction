@@ -174,22 +174,26 @@ if st.button("🔍 Predict Battery Health"):
     st.subheader("Battery Condition")
 
 
-    if predicted_soh >= 0.80:
+    if predicted_soh >= 0.90:
 
-        st.success(
-            "🟢 Healthy Battery"
-        )
+     st.success(
+        "🟢 Healthy Battery"
+    )
 
+    elif predicted_soh >= 0.75:
+
+     st.warning(
+        "🟡 Moderate Battery"
+    )
 
     elif predicted_soh >= 0.60:
 
-        st.warning(
-            "🟡 Moderate Battery"
-        )
-
+     st.warning(
+        "🟠 Weak Battery"
+    )
 
     else:
 
-        st.error(
-            "🔴 Critical Battery"
-        )
+     st.error(
+        "🔴 Critical Battery"
+    )
